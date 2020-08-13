@@ -1,0 +1,1 @@
+allow system_server vncflinger_socket:sock_file write;

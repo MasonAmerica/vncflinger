@@ -18,6 +18,7 @@ binder_call(surfaceflinger, vncflinger);
 
 # socket
 allow vncflinger rootfs:lnk_file getattr;
+r_dir_file(vncflinger, domain)
 
 # gpu access (needed on rk)
 allow vncflinger gpu_device:chr_file { ioctl open read write };
