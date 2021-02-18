@@ -23,6 +23,7 @@ LOCAL_SHARED_LIBRARIES := \
     libcutils \
     libgui \
     libjpeg \
+    liblog \
     libssl \
     libui \
     libutils \
@@ -32,7 +33,7 @@ LOCAL_STATIC_LIBRARIES += \
     libtigervnc
 
 LOCAL_CFLAGS := -DVNCFLINGER_VERSION="1.0"
-LOCAL_CFLAGS += -Ofast -Werror -std=c++11 -fexceptions
+LOCAL_CFLAGS += -Ofast -Werror -std=c++14 -fexceptions
 
 #LOCAL_CFLAGS += -DLOG_NDEBUG=0
 #LOCAL_CXX := /usr/bin/include-what-you-use
